@@ -1,0 +1,25 @@
+version: "2"
+services:
+  app:
+    container_name: app
+    restart: always
+    build: .
+    command: npm run start:ts
+    ports:
+      - "3000:3000"
+    links:
+      - mongo_service
+    depends_on:
+      - mongo_service
+    environment:
+      MONGO_PORT: 27017
+      MONGO_HOST: mongo_service
+      MONGO_DB: todo
+
+  mongo_service:
+    container_name: mongo_service
+    image: mongo
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: todo

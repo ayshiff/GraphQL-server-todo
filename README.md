@@ -1,4 +1,6 @@
 # GraphQL-server-todo 🚀
+[![CircleCI](https://circleci.com/gh/ayshiff/GraphQL-server-todo.svg?style=svg)](https://circleci.com/gh/ayshiff/GraphQL-server-todo)
+[![Coverage Status](https://coveralls.io/repos/github/ayshiff/GraphQL-server-todo/badge.svg?branch=master)](https://coveralls.io/github/ayshiff/GraphQL-server-todo?branch=master)
 
 The project implements a graphQL server to manage todo tasks. You can run the server using a dockerfile.
 
